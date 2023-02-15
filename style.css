@@ -1,72 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300&display=swap");
 
-*{
-    font-family: "Poppins", sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
 }
 
-#logo{
-    color: #6070FF;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 700;
+#logo {
+  color: #6070ff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.menu{
-    color: #6070FF;
-    font-size: 1.3rem;
+.menu {
+  color: #6070ff;
+  font-size: 1.3rem;
 }
 
-.hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url("./images/header-shapes.png");
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-size: 100%;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./images/header-shapes.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.greetings{
-    color: black;
-    font-size: 4.5rem;
-    font-weight: 700;
+.greetings {
+  color: black;
+  font-size: 4.5rem;
+  font-weight: 700;
 }
 
-.about-me{
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
+.about-me {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
 }
 
-.connect-me a{
-    color: #6070FF;
-    text-decoration: none;
-    font-size: 1.5rem;  
+.connect-me a {
+  color: #6070ff;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-.icon-group{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0%;
+.icon-group {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0%;
 }
 
-.icon{
-    padding: 5px;
-    margin-left: 0px;
+.icon {
+  padding: 5px;
+  margin-left: 0;
 }
 
-.fa-brands{
-    font-size: large;
+.fa-brands {
+  font-size: large;
 }
