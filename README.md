@@ -179,30 +179,38 @@ git@github.com:KUBAHO3/My-Portfolio.git
 - LinkedIn: [Kubaho Linne Heaven](https://www.linkedin.com/in/kubaho-linne-heaven-78ab37208/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
+
 ## :telescope: Future Features <a name="future-features"></a><br/>
 - [ ] **making it responsive**<br/>
 - [ ] **Adding Animation**<br/>
 - [ ] **Making it dynamic**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
+
 ## :handshake: Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!<br/>
 Feel free to check the [git@github.com:KUBAHO3/My-Portfolio.git](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- SUPPORT -->
+
 ## :star:️ Show your support <a name="support"></a>
 If you like this project please follow me on github & twitter and also connect on Linkedin.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ACKNOWLEDGEMENTS -->
+
 ## :pray: Acknowledgments <a name="acknowledgements"></a>
 I would like to thank Microverse for this exercise.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FAQ (optional) -->
+
 ## :question: FAQ (OPTIONAL) <a name="faq"></a><br/>
-<!-- - **[Question_1]**<br/>
-  - [Answer_1]<br/>
-- **[Question_2]**<br/>
-  - [Answer_2] -->
+- **How long can it take to build that project**
+
+  - 1-2hrs according to personal skills
+
+- **Where to find figma for that project!**
+
+  - Figma for that project will be available soon!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->
 
