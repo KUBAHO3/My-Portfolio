@@ -9,7 +9,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
+  z-index: 99999999;
+  background-color: #fff;
 }
 
 #logo {
@@ -29,7 +31,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   background-image: url("./images/header-shapes.png");
   background-color: #fff;
   background-repeat: no-repeat;
@@ -72,7 +74,7 @@
 }
 
 .works {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -91,7 +93,7 @@
 h1.title {
   font-size: 32px;
   font-weight: 700;
-  color: #172B4D;
+  color: #172b4d;
   margin-top: 20px;
 }
 
@@ -110,14 +112,14 @@ h1.title {
 .position .post-name {
   font-weight: 600;
   font-size: 13px;
-  color: #7A869A;
+  color: #7a869a;
   padding-left: 20px;
 }
 
 .position .post-year {
   font-weight: 600;
   font-size: 13px;
-  color: #7A869A;
+  color: #7a869a;
   padding-left: 20px;
 }
 
@@ -134,32 +136,34 @@ p.description {
 }
 
 .techs .single-tech {
-  color: #6070FF;
+  color: #6070ff;
   font-weight: 500px;
   font-size: 12px;
-  background-color: #EBEBFF;
+  background-color: #ebebff;
   border-radius: 8px;
   padding: 8px 12px;
   margin-right: 10px;
 }
 
 .view-more {
-  color: #396DF2;
+  color: #396df2;
   font-weight: 600px;
   font-size: 17px;
   background-color: #fff;
   border-radius: 8px;
   padding: 14px 10px;
-  border: 2px solid #396DF2;
+  border: 2px solid #396df2;
 }
-.about-myself{
-  background-color: #E5E5E5;
+
+.about-myself {
+  background-color: #e5e5e5;
 }
+
 .about-myself-intro {
   padding-top: 60px;
   padding-bottom: 30px;
   background-color: #fff;
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 0 50px 0 0;
 }
 
 .about-myself-skills {
@@ -177,11 +181,41 @@ p.description {
 .skill-name {
   font-weight: 600;
   font-size: 20px;
-  color: #000000;
+  color: #000;
 }
 
 .skill-name.fas {
   font-weight: 600;
   font-size: 20px;
-  color: #ACB7C3;
+  color: #acb7c3;
+}
+
+.sub-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-skill {
+  display: flex;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.sub-skill-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sub-skill-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #253858;
+  padding-top: 15px;
 }
