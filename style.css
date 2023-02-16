@@ -71,4 +71,117 @@
   font-size: large;
 }
 
+.works {
+  background-color: #E5E5E5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
+.cards {
+  padding: 10px 10px 30px 10px;
+  border-radius: 16px;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.cards img {
+  width: 100%;
+}
+
+h1.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #172B4D;
+  margin-top: 20px;
+}
+
+.position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.position .place {
+  font-weight: 600;
+  font-size: 13px;
+  color: #344563;
+}
+
+.position .post-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #7A869A;
+  padding-left: 20px;
+}
+
+.position .post-year {
+  font-weight: 600;
+  font-size: 13px;
+  color: #7A869A;
+  padding-left: 20px;
+}
+
+p.description {
+  font-weight: 400px;
+  font-size: 15px;
+  color: #344563;
+}
+
+.techs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.techs .single-tech {
+  color: #6070FF;
+  font-weight: 500px;
+  font-size: 12px;
+  background-color: #EBEBFF;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-right: 10px;
+}
+
+.view-more {
+  color: #396DF2;
+  font-weight: 600px;
+  font-size: 17px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 14px 10px;
+  border: 2px solid #396DF2;
+}
+.about-myself{
+  background-color: #E5E5E5;
+}
+.about-myself-intro {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 0px 50px 0px 0px;
+}
+
+.about-myself-skills {
+  background-color: #fff;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+.skill-name.fas {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ACB7C3;
+}
