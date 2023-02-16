@@ -37,22 +37,22 @@
 }
 
 .greetings {
-  color: black;
-  font-size: 4.5rem;
+  color: #172B4D;
+  font-size: 40px;
   font-weight: 700;
 }
 
 .about-me {
   font-weight: 400;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 16px;
+  color: #344563;
   text-decoration: none;
 }
 
 .connect-me a {
-  color: #6070ff;
+  color: #7F8CFF ;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 16px ;
 }
 
 .icon-group {

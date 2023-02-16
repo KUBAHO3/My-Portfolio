@@ -102,11 +102,11 @@ This project is about creating a personal portfolio to showcase my activities, b
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](git@github.com:KUBAHO3/My-Portfolio.git)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- GETTING STARTED -->
 
