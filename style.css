@@ -84,6 +84,8 @@
   border-radius: 16px;
   background-color: #fff;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards img {
@@ -130,8 +132,6 @@ p.description {
 }
 
 .techs {
-  display: flex;
-  flex-direction: row;
   margin-bottom: 20px;
 }
 
@@ -143,6 +143,7 @@ p.description {
   border-radius: 8px;
   padding: 8px 12px;
   margin-right: 10px;
+  float: left;
 }
 
 .view-more {
@@ -153,6 +154,7 @@ p.description {
   border-radius: 8px;
   padding: 14px 10px;
   border: 2px solid #396df2;
+  width: 40%;
 }
 
 .about-myself {
