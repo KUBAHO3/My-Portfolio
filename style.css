@@ -236,7 +236,8 @@ form div .view-more {
   background-image: url("./images/contactbg.png");
   background-color: #6070ff;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 55%;
+  background-position: right 21px;
   border-radius: 50px 0 0 0;
 }
 
