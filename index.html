@@ -180,7 +180,33 @@
             </div>
         </div>
     </section>
-    
+    <section>
+        <div class="container">
+            <h3>
+                Contact me
+            </h3>
+            <p>
+                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
+            </p>
+            <form action="https://formspree.io/f/xrgvqlpj" method="post">
+                <div>
+                    <label for="Name">Name</label>
+                    <input id="username" type="text" name="username" required pattern="^[a-zA-Z]{3,30}$" title="Name should be text and not more than 30 characters" placeholder="Enter your Name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="useremail" type="email" name="email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="Only emails are allowed here" placeholder="Enter your Email">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <textarea id="description" type="text" name="description" required pattern="^[a-zA-Z0-9]{1,500}$" title="description should be not more than 500 characters" placeholder="write your message here"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Get in touch</button>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
