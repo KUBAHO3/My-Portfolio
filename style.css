@@ -155,6 +155,16 @@ p.description {
   border: 2px solid #396df2;
 }
 
+form div .view-more {
+  width: 142px;
+  padding: 12px 12px;
+}
+
+.view-more:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
 .about-myself {
   background-color: #e5e5e5;
 }
@@ -227,6 +237,7 @@ p.description {
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-size: 100%;
+  border-radius: 50px 0 0 0;
 }
 
 .contact-title {
@@ -266,9 +277,4 @@ form textarea {
   border: 1px solid #cfd8dc;
   padding: 15px;
   margin-bottom: 10px;
-}
-
-form div .view-more {
-  width: 142px;
-  padding: 12px 12px;
 }
