@@ -155,6 +155,16 @@ p.description {
   border: 2px solid #396df2;
 }
 
+form div .view-more {
+  width: 142px;
+  padding: 12px 12px;
+}
+
+.view-more:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
 .about-myself {
   background-color: #e5e5e5;
 }
@@ -218,4 +228,63 @@ p.description {
   font-size: 15px;
   color: #253858;
   padding-top: 15px;
+}
+
+.my-form {
+  padding-top: 10vh;
+  padding-bottom: 1px;
+  background-image: url("./images/contactbg.png");
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: right 21px;
+  border-radius: 50px 0 0 0;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-explanation {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 20px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+form textarea {
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.go-home-bar {
+  border: 5px solid black;
+  border-radius: 5px;
+  width: 30%;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }

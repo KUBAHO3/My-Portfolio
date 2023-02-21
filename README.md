@@ -97,6 +97,9 @@ This project is about creating a personal portfolio to showcase my activities, b
 - **Linters SetUp**
 - **Follow HTML and CSS best practice**
 - **Display Text**
+- **Display Cards**
+- **Display Text**
+- **Hoover Buttons**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
