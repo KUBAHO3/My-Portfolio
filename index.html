@@ -191,21 +191,22 @@
             <form action="https://formspree.io/f/xrgvqlpj" method="post">
                 <div>
                     <label for="Name" hidden>Name</label>
-                    <input id="username" type="text" name="username" required pattern="^[a-zA-Z]{3,30}$" title="Name should be text and not more than 30 characters" placeholder="Enter your Name">
+                    <input id="username" type="text" name="username" maxlength="30" title="Name should be text and not more than 30 characters" placeholder="Enter your Name">
                 </div>
                 <div>
                     <label for="email" hidden>Email</label>
-                    <input id="useremail" type="email" name="email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="Only emails are allowed here" placeholder="Enter your Email">
+                    <input id="useremail" type="email" name="email" required  title="Only emails are allowed here" placeholder="Enter your Email">
                 </div>
                 <div>
                     <label for="email" hidden>Description</label>
-                    <textarea id="description" type="text" name="description" required pattern="^[a-zA-Z0-9]{1,500}$" title="description should be not more than 500 characters" placeholder="Write your message here"></textarea>
+                    <textarea id="description" type="text" name="description" required maxlength="500" title="description should be not more than 500 characters" placeholder="Write your message here"></textarea>
                 </div>
                 <div>
                     <button class="view-more" type="submit">Get in touch</button>
                 </div>
             </form>
         </div>
+        <hr class="go-home-bar">
     </section>
 </body>
 
