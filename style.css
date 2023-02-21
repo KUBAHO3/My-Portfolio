@@ -219,3 +219,29 @@ p.description {
   color: #253858;
   padding-top: 15px;
 }
+
+.my-form {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  background-image: url("./images/contactbg.png");
+  background-color: #6070FF;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-explanation {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
