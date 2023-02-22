@@ -34,7 +34,7 @@ body {
 #logo {
   color: #6070ff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -376,4 +376,65 @@ form textarea {
     padding-left: 15%;
     padding-right: 15%;
   }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .cards img {
+    width: 50%;
+  }
+
+  .cards img.swap {
+    order: 1;
+  }
+
+  .card-data {
+    padding-left: 20px;
+  }
+
+  h1.title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #172b4d;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 52px;
+  }
+  
+  .position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .position .place {
+    font-weight: 600;
+    font-size: 13px;
+    color: #344563;
+  }
+  
+  .position .post-name {
+    font-weight: 600;
+    font-size: 13px;
+    color: #7a869a;
+    padding-left: 20px;
+  }
+  
+  .position .post-year {
+    font-weight: 600;
+    font-size: 13px;
+    color: #7a869a;
+    padding-left: 20px;
+  }
+  
+  p.description {
+    font-weight: 400px;
+    font-size: 16px;
+    color: #344563;
+  }
+   
 }
