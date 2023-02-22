@@ -4,26 +4,47 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  z-index: 99999999;
   background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #logo {
   color: #6070ff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .menu {
   color: #6070ff;
   font-size: 1.3rem;
+}
+
+.menu-list {
+  display: none;
 }
 
 .hero {
@@ -54,7 +75,9 @@
 .connect-me a {
   color: #7f8cff;
   text-decoration: none;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 24px;
 }
 
 .icon-group {
@@ -67,6 +90,8 @@
 .icon {
   padding: 5px;
   margin-left: 0;
+  color: #505f79;
+  width: 19.99px;
 }
 
 .fa-brands {
@@ -227,7 +252,6 @@ form div .view-more {
   font-weight: 600;
   font-size: 15px;
   color: #253858;
-  padding-top: 15px;
 }
 
 .my-form {
@@ -263,8 +287,7 @@ form {
 }
 
 form input {
-  width: 100%;
-  height: 48px;
+  width: 90%;
   margin-bottom: 20px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -272,8 +295,7 @@ form input {
 }
 
 form textarea {
-  width: 100%;
-  height: 170px;
+  width: 90%;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   padding: 15px;
@@ -287,4 +309,203 @@ form textarea {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 5px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #menu-icon {
+    display: none;
+  }
+
+  a {
+    text-decoration-line: none;
+    color: #344563;
+  }
+
+  .container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-list > li {
+    margin-left: 30px;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .hero-holder {
+    background-color: #e5e5e5;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./images/desktop/herobg.png");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    border-radius: 0 0 0 50px;
+  }
+
+  .greetings {
+    color: #091e42;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .about-me {
+    font-weight: 400;
+    font-size: 20px;
+    color: #344563;
+    text-decoration: none;
+    line-height: 28px;
+  }
+
+  .hero > .container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .cards img {
+    width: 50%;
+  }
+
+  .cards img.swap {
+    order: 1;
+  }
+
+  .card-data {
+    padding-left: 20px;
+  }
+
+  h1.title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #172b4d;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 52px;
+  }
+
+  .position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .position .place {
+    font-weight: 600;
+    font-size: 13px;
+    color: #344563;
+  }
+
+  .position .post-name {
+    font-weight: 600;
+    font-size: 13px;
+    color: #7a869a;
+    padding-left: 20px;
+  }
+
+  .position .post-year {
+    font-weight: 600;
+    font-size: 13px;
+    color: #7a869a;
+    padding-left: 20px;
+  }
+
+  p.description {
+    font-weight: 400px;
+    font-size: 16px;
+    color: #344563;
+  }
+
+  .about-myself {
+    display: flex;
+  }
+
+  .about-myself-intro {
+    width: 50%;
+    border-radius: 0 0 0 0;
+    padding-bottom: 10vh;
+    padding-left: 5%;
+  }
+
+  .about-myself-skills {
+    padding-top: 10vh;
+    width: 50%;
+    border-radius: 0 50px 0 0;
+    padding-bottom: 10vh;
+    padding-right: 5%;
+  }
+
+  .sub-skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sub-skill {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .sub-skill-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .sub-skill-name {
+    font-weight: 600;
+    font-size: 15px;
+    color: #253858;
+    padding-top: 0;
+  }
+
+  .my-form {
+    background-image: url("./images/desktop/contactbg.png");
+    background-color: #6070ff;
+    background-repeat: no-repeat;
+    background-size: 90% 95%;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 10vh;
+  }
+
+  #center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .go-home-bar {
+    display: none;
+  }
 }
