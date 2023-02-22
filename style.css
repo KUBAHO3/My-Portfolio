@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0px !important;
+  margin: 0 !important;
 }
 
 .container {
@@ -90,7 +90,7 @@ body {
 .icon {
   padding: 5px;
   margin-left: 0;
-  color: #505F79;
+  color: #505f79;
   width: 19.99px;
 }
 
@@ -323,15 +323,14 @@ form textarea {
   }
 
   .navbar {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .menu-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
   }
 
   .menu-list > li {
@@ -344,7 +343,7 @@ form textarea {
   }
 
   .hero-holder {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 
   .hero {
@@ -361,7 +360,7 @@ form textarea {
   }
 
   .greetings {
-    color: #091E42;
+    color: #091e42;
     font-size: 48px;
     font-weight: 700;
   }
@@ -385,7 +384,7 @@ form textarea {
     padding: 10px;
     cursor: pointer;
   }
-  
+
   .cards img {
     width: 50%;
   }
@@ -406,33 +405,33 @@ form textarea {
     margin-bottom: 10px;
     line-height: 52px;
   }
-  
+
   .position {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  
+
   .position .place {
     font-weight: 600;
     font-size: 13px;
     color: #344563;
   }
-  
+
   .position .post-name {
     font-weight: 600;
     font-size: 13px;
     color: #7a869a;
     padding-left: 20px;
   }
-  
+
   .position .post-year {
     font-weight: 600;
     font-size: 13px;
     color: #7a869a;
     padding-left: 20px;
   }
-  
+
   p.description {
     font-weight: 400px;
     font-size: 16px;
@@ -448,14 +447,14 @@ form textarea {
     border-radius: 0 0 0 0;
     padding-bottom: 10vh;
   }
-  
+
   .about-myself-skills {
     padding-top: 10vh;
     width: 50%;
     border-radius: 0 50px 0 0;
     padding-bottom: 10vh;
   }
-   
+
   .sub-skills {
     display: flex;
     flex-direction: row;
@@ -465,8 +464,8 @@ form textarea {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 10px; 
+    margin-left: 0;
+    margin-right: 10px;
   }
 
   .sub-skill-img {
@@ -480,7 +479,7 @@ form textarea {
     font-weight: 600;
     font-size: 15px;
     color: #253858;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .my-form {
@@ -496,5 +495,4 @@ form textarea {
   .go-home-bar {
     display: none;
   }
-
 }
