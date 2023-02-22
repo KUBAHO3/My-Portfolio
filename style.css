@@ -75,7 +75,9 @@ body {
 .connect-me a {
   color: #7f8cff;
   text-decoration: none;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 24px;
 }
 
 .icon-group {
@@ -88,6 +90,8 @@ body {
 .icon {
   padding: 5px;
   margin-left: 0;
+  color: #505F79;
+  width: 19.99px;
 }
 
 .fa-brands {
@@ -337,4 +341,39 @@ form textarea {
     color: #344563;
   }
 
+  .hero-holder {
+    background-color: #E5E5E5;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./images/desktop/herobg.png");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    border-radius: 0 0 0 50px;
+  }
+
+  .greetings {
+    color: #091E42;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .about-me {
+    font-weight: 400;
+    font-size: 20px;
+    color: #344563;
+    text-decoration: none;
+    line-height: 28px;
+  }
+
+  .hero > .container {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
