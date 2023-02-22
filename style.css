@@ -288,7 +288,6 @@ form {
 
 form input {
   width: 90%;
-  height: 48px;
   margin-bottom: 20px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -297,7 +296,6 @@ form input {
 
 form textarea {
   width: 90%;
-  height: 170px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   padding: 15px;
@@ -322,6 +320,11 @@ form textarea {
   .container {
     padding-right: 10%;
     padding-left: 10%;
+  }
+
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .menu-list {
@@ -442,13 +445,14 @@ form textarea {
 
   .about-myself-intro {
     width: 50%;
-    border-radius: 50px 0 0 0;
+    border-radius: 0 0 0 0;
     padding-bottom: 10vh;
   }
   
   .about-myself-skills {
     padding-top: 10vh;
     width: 50%;
+    border-radius: 0 50px 0 0;
     padding-bottom: 10vh;
   }
    
@@ -460,9 +464,6 @@ form textarea {
   .sub-skill {
     display: flex;
     flex-direction: column;
-    /* background-color: #f7f7f9;
-    border-radius: 8px;
-    padding: 10px 20px;*/
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 10px; 
@@ -481,4 +482,19 @@ form textarea {
     color: #253858;
     padding-top: 0px;
   }
+
+  .my-form {
+    background-image: url("./images/desktop/contactbg.png");
+    background-color: #6070ff;
+    background-repeat: no-repeat;
+    background-size: 90% 95%;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-bottom: 10vh;
+  }
+
+  .go-home-bar {
+    display: none;
+  }
+
 }
