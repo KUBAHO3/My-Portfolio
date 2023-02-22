@@ -100,6 +100,7 @@ This project is about creating a personal portfolio to showcase my activities, b
 - **Display Cards**
 - **Display Text**
 - **Hoover Buttons**
+- **Desktop Version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,7 +185,6 @@ git@github.com:KUBAHO3/My-Portfolio.git
 <!-- FUTURE FEATURES -->
 
 ## :telescope: Future Features <a name="future-features"></a><br/>
-- [ ] **making it responsive**<br/>
 - [ ] **Adding Animation**<br/>
 - [ ] **Making it dynamic**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
