@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -347,6 +348,10 @@ form textarea {
     color: #344563;
   }
 
+  .menu-list > li > a:hover {
+    color: #6070ff;
+  }
+
   .hero-holder {
     background-color: #e5e5e5;
   }
@@ -368,6 +373,20 @@ form textarea {
     color: #091e42;
     font-size: 48px;
     font-weight: 700;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .about-me {
@@ -383,6 +402,12 @@ form textarea {
     padding-right: 15%;
   }
 
+  .icon-group li a i:hover {
+    color: #6070ff;
+    transform: scale(2);
+    transition: ease 0.6s;
+  }
+
   .cards {
     display: flex;
     flex-direction: row;
@@ -392,6 +417,12 @@ form textarea {
 
   .cards img {
     width: 50%;
+    transition: width 2s, height 2s;
+  }
+
+  .cards img:hover {
+    width: 55%;
+    height: auto;
   }
 
   .cards img.swap {
@@ -497,6 +528,11 @@ form textarea {
     padding-right: 30%;
     padding-left: 30%;
     padding-bottom: 10vh;
+  }
+
+  .contact-title {
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
   #center {
