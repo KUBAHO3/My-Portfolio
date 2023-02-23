@@ -2,6 +2,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -347,6 +348,10 @@ form textarea {
     color: #344563;
   }
 
+  .menu-list > li > a:hover {
+    color: #6070ff;
+  }
+
   .hero-holder {
     background-color: #e5e5e5;
   }
@@ -395,6 +400,12 @@ form textarea {
   .hero > .container {
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  .icon-group li a i:hover {
+    color: #6070ff;
+    transform: scale(2);
+    transition: ease .6s;
   }
 
   .cards {
