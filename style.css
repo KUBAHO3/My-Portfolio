@@ -2,11 +2,11 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -405,7 +405,7 @@ form textarea {
   .icon-group li a i:hover {
     color: #6070ff;
     transform: scale(2);
-    transition: ease .6s;
+    transition: ease 0.6s;
   }
 
   .cards {
