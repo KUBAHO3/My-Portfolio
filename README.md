@@ -102,16 +102,17 @@ This project is about creating a personal portfolio to showcase my activities, b
 - **Hoover Buttons**
 - **Desktop Version**
 - **Include Animations**
+- **Deployed with GithubPages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](git@github.com:KUBAHO3/My-Portfolio.git)
+- [Live Demo Link](https://kubaho3.github.io/My-Portfolio/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
