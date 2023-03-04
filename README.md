@@ -43,6 +43,7 @@ After you're finished please remove all the comments and instructions!
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🦻 Walkthrough  Video](#walkthrough-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -111,6 +112,14 @@ This project is about creating a personal portfolio to showcase my activities, b
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://kubaho3.github.io/My-Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- WalkThrough Video -->
+
+## 🦻 WalkThrough Video <a name="#walkthrough-demo"></a>
+
+- [WalkThrough Video Link](https://www.loom.com/share/1f95cd1e242946fe80a7c0cb469aeb48)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
