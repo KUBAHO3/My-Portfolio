@@ -19,7 +19,6 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
 }
 
 .navbar {
@@ -46,6 +45,43 @@ body {
 
 .menu-list {
   display: none;
+}
+
+.mobile-nav {
+  position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: 0.2s ease-in-out;
+  background-color: rgba(96, 112, 255, 0.9);
+	display: none;
+}
+
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  color: #fff;
+  background-color: red;
+  padding: 0px 7px; 
+  float: right;
+  margin: 20px; 
+  margin-left: 89%;
+}
+
+.menu-list-mobile > li {
+  list-style-type: none;  
+}
+
+.menu-list-mobile > li > a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
 }
 
 .hero {
