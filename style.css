@@ -54,7 +54,9 @@ body {
   left: 0;
   right: 0;
   transition: 0.2s ease-in-out;
-  background-color: rgba(96, 112, 255, 0.9);
+  background-color: rgba(41, 58, 208, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   display: none;
 }
 
@@ -68,8 +70,7 @@ body {
   font-size: 34px;
   padding: 0 7px;
   float: right;
-  margin: 20px;
-  margin-left: 89%;
+  margin-left: 85%;
 }
 
 .menu-list-mobile > li {
