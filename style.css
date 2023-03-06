@@ -49,13 +49,13 @@ body {
 
 .mobile-nav {
   position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	transition: 0.2s ease-in-out;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
   background-color: rgba(96, 112, 255, 0.9);
-	display: none;
+  display: none;
 }
 
 .nav-toggle {
@@ -66,14 +66,22 @@ body {
 .close-button {
   color: #fff;
   background-color: red;
-  padding: 0px 7px; 
+  padding: 0 7px;
   float: right;
-  margin: 20px; 
+  margin: 20px;
   margin-left: 89%;
 }
 
 .menu-list-mobile > li {
-  list-style-type: none;  
+  list-style-type: none;
+}
+
+.connect-me a {
+  color: #7f8cff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .menu-list-mobile > li > a {
@@ -107,14 +115,6 @@ body {
   font-size: 16px;
   color: #344563;
   text-decoration: none;
-}
-
-.connect-me a {
-  color: #7f8cff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .icon-group {
