@@ -65,7 +65,7 @@ body {
 
 .close-button {
   color: #fff;
-  background-color: red;
+  font-size: 34px;
   padding: 0 7px;
   float: right;
   margin: 20px;
@@ -186,7 +186,7 @@ h1.title {
 }
 
 p.description {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   color: #344563;
 }
@@ -199,7 +199,7 @@ p.description {
 
 .techs .single-tech {
   color: #6070ff;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 12px;
   background-color: #ebebff;
   border-radius: 8px;
@@ -209,7 +209,7 @@ p.description {
 
 .view-more {
   color: #396df2;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 17px;
   background-color: #fff;
   border-radius: 8px;
@@ -260,6 +260,10 @@ form div .view-more {
   font-weight: 600;
   font-size: 20px;
   color: #acb7c3;
+}
+
+.dots {
+  font-size: 20px;
 }
 
 .sub-skills {
@@ -505,7 +509,7 @@ form textarea {
   }
 
   p.description {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     color: #344563;
   }
