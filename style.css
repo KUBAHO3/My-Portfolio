@@ -14,13 +14,12 @@ body {
   padding-right: 5%;
 }
 
-.fixed-top {
+/* .fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
-}
+} */
 
 .navbar {
   display: flex;
@@ -48,6 +47,52 @@ body {
   display: none;
 }
 
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  background-color: rgba(41, 58, 208, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  color: #fff;
+  font-size: 34px;
+  padding: 0 7px;
+  float: right;
+  margin-left: 85%;
+}
+
+.menu-list-mobile > li {
+  list-style-type: none;
+}
+
+.connect-me a {
+  color: #7f8cff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.menu-list-mobile > li > a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -71,14 +116,6 @@ body {
   font-size: 16px;
   color: #344563;
   text-decoration: none;
-}
-
-.connect-me a {
-  color: #7f8cff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .icon-group {
@@ -150,7 +187,7 @@ h1.title {
 }
 
 p.description {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   color: #344563;
 }
@@ -163,7 +200,7 @@ p.description {
 
 .techs .single-tech {
   color: #6070ff;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 12px;
   background-color: #ebebff;
   border-radius: 8px;
@@ -173,7 +210,7 @@ p.description {
 
 .view-more {
   color: #396df2;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 17px;
   background-color: #fff;
   border-radius: 8px;
@@ -224,6 +261,10 @@ form div .view-more {
   font-weight: 600;
   font-size: 20px;
   color: #acb7c3;
+}
+
+.dots {
+  font-size: 20px;
 }
 
 .sub-skills {
@@ -469,7 +510,7 @@ form textarea {
   }
 
   p.description {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     color: #344563;
   }
