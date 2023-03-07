@@ -9,7 +9,13 @@ const closeNav = ReadElement('.close-button');
 const viewModal = ReadElement('.view-modal');
 
 function AddMenu(selected, modalPart, opener) {
-  return selected.addEventListener('click', () => modalPart.classList.add(opener));
+  return selected.addEventListener('click', () => {
+    const {
+      scrollY,
+    } = window;
+    modalPart.classList.add(opener);
+    modalPart.style.top = `${scrollY}px`;
+  });
 }
 
 function RemoveMenu(selected, modalPart, remover) {
@@ -22,6 +28,7 @@ RemoveMenu(WorkModal, WorkModal, 'nav-toggle');
 RemoveMenu(closeNav, nav, 'nav-toggle');
 RemoveMenu(nav, nav, 'nav-toggle');
 
+// WorkModal.style.top = topPos;
 // const details = {
 //   data: [
 //     {
