@@ -420,10 +420,43 @@ form {
 
 form input {
   width: 90%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 15px;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+#useremail {
+  margin-bottom: 0;
+}
+
+.email-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.validator-red {
+  width: 95%;
+  background-color: #fff;
+  color: red;
+  padding: 2px;
+  border: 1px solid red;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.validator-green {
+  width: 95%;
+  background-color: #fff;
+  color: green;
+  padding: 2px;
+  border: 1px solid green;
+  border-radius: 5px;
+  text-align: center;
 }
 
 form textarea {
@@ -690,6 +723,7 @@ form textarea {
 
   #center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
