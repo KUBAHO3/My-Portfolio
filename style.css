@@ -420,6 +420,7 @@ form {
 
 form input {
   width: 90%;
+
   /* margin-bottom: 20px; */
   border: 1px solid #cfd8dc;
   border-radius: 8px;

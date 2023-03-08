@@ -14,23 +14,25 @@ const emailer = ReadElement('#useremail');
 const validator = ReadElement('.validator');
 const submitbtn = ReadElement('#submit-form');
 
-function EmailValidation(event) {
-  let email = emailer.value;
+function EmailValidation(e) {
+  const email = emailer.value;
   let text;
-  if (email === email.toLowerCase() && email !== '' ) {
-    text = "Email is inserted in lowercase as required";
+  if (email === email.toLowerCase() && email !== '') {
+    text = 'Email is inserted in lowercase as required';
     validator.innerHTML = text;
     validator.classList.add('validator-green');
     submitbtn.style.marginTop = '20px';
   } else {
-    text = "Email is required and has to be in lowercase";
+    text = 'Email is required and has to be in lowercase';
     validator.innerHTML = text;
     validator.classList.remove('validator-green');
     validator.classList.add('validator-red');
     submitbtn.style.marginTop = '20px';
-    event.preventDefault();
+    e.preventDefault();
   }
 }
+
+submitbtn.addEventListener('click', () => EmailValidation(e));
 
 function RemoveMenu(selected, modalPart, remover) {
   return selected.addEventListener('click', () => modalPart.classList.remove(remover));
