@@ -31,7 +31,7 @@ function EmailValidation(e) {
     e.preventDefault();
   }
 }
-
+const e = this;
 submitbtn.addEventListener('click', () => EmailValidation(e));
 
 function RemoveMenu(selected, modalPart, remover) {
