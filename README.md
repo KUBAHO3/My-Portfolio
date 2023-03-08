@@ -104,6 +104,8 @@ This project is about creating a personal portfolio to showcase my activities, b
 - **Desktop Version**
 - **Include Animations**
 - **Deployed with GithubPages**
+- **Mobile Nav**
+- **Detail modal**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
