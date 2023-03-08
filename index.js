@@ -95,11 +95,8 @@ function renderModal(number) {
 
 function AddMenu(selected, modalPart, opener, number) {
   return selected.addEventListener('click', () => {
-    const {
-      scrollY,
-    } = window;
     modalPart.classList.add(opener);
-    modalPart.style.top = `0px`;
+    modalPart.style.top = '0px';
 
     if (number) {
       renderModal(number - 1);
