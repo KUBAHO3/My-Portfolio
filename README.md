@@ -106,6 +106,7 @@ This project is about creating a personal portfolio to showcase my activities, b
 - **Deployed with GithubPages**
 - **Mobile Nav**
 - **Detail modal**
+- **Email validation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

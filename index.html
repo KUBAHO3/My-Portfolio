@@ -215,21 +215,25 @@
             <p class="contact-explanation">
                 If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
             </p>
-            <form action="https://formspree.io/f/xrgvqlpj" method="post">
+            
+            <form action="https://formspree.io/f/xrgvqlpj" method="post" id="contact-form">
                 <div>
                     <label for="Name" hidden>Name</label>
                     <input id="username" type="text" name="username" maxlength="30" title="Name should be text and not more than 30 characters" placeholder="Enter your Name" required>
+                    <small></small>
                 </div>
-                <div>
+                <div class="email-div">
                     <label for="email" hidden>Email</label>
                     <input id="useremail" type="email" name="email" required  title="Only emails are allowed here" placeholder="Enter your Email">
+                    
                 </div>
                 <div>
                     <label for="email" hidden>Description</label>
                     <textarea id="description" type="text" rows="5" name="description" required maxlength="500" title="description should be not more than 500 characters" placeholder="Write your message here"></textarea>
                 </div>
                 <div id="center">
-                    <button class="view-more" type="submit" >Get in touch</button>
+                    <small class="validator"></small>
+                    <button class="view-more" type="submit" id="submit-form" onclick="EmailValidation(event)">Get in touch</button>
                 </div>
             </form>
         </div>
