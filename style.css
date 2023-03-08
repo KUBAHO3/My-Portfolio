@@ -48,7 +48,7 @@ body {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
 
   /* top: 0; */
   width: 100%;
@@ -292,7 +292,7 @@ form div .view-more {
 }
 
 .modal-section {
-  position: absolute;
+  position: fixed;
   width: 100%;
   min-height: 100vh;
   transition: 0.2s ease-in-out;
@@ -300,6 +300,7 @@ form div .view-more {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   display: none;
+  overflow: auto;
 }
 
 .nav-toggle {
@@ -308,10 +309,12 @@ form div .view-more {
 }
 
 .work-modal {
+  position: absolute;
   background-color: #fff;
   border-radius: 16px;
   margin: 4%;
-  padding: 10px;
+  margin-top: 2.5%;
+  padding: 20px;
 }
 
 .work-modal-head {
@@ -322,6 +325,9 @@ form div .view-more {
 .work-modal-head > .title {
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
 }
 
 .close-modal {
@@ -331,6 +337,12 @@ form div .view-more {
   cursor: pointer;
 }
 
+.work-modal-head-body {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
 .work-modal-hr {
   color: #ebecf0;
 }
@@ -338,6 +350,12 @@ form div .view-more {
 .work-modal-img {
   width: 100%;
   height: auto;
+}
+
+.work-modal-middle > .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 #techs {
@@ -645,7 +663,7 @@ form textarea {
 
   .work-modal-img {
     width: 100%;
-    height: 400px;
+    height: 586px;
   }
 
   .sub-skill-name {

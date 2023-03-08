@@ -99,7 +99,7 @@ function AddMenu(selected, modalPart, opener, number) {
       scrollY,
     } = window;
     modalPart.classList.add(opener);
-    modalPart.style.top = `${scrollY}px`;
+    modalPart.style.top = `0px`;
 
     if (number) {
       renderModal(number - 1);
