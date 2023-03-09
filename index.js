@@ -19,36 +19,27 @@ const submitbtn = ReadElement('#submit-form');
 var myMessage = UpdateInput(message)
 var userName = UpdateInput(uname)
 var email = UpdateInput(emailer)
-var userData = {}
+var userData = []
 function UpdateInput(selected){
    selected.addEventListener("change", myFunction);
   function myFunction() {
     email = emailer.value;
     userName = uname.value;
     myMessage = message.value;
-    userData = { userName, email, myMessage }
-    // console.log(userData)
-  console.log(userData)
-  // return userData;
+    userData = [ userName, email, myMessage ]
+    localStorage.setItem("userData", userData)
+  
   }
 }
- 
 
-// const userData = { userName, email, myMessage }
-// console.log(userData);
+const myFormData= localStorage.getItem("userData")
+const myFormDataArray = myFormData.split(",");
 
-// function UpdateInput(selected){
-//   selected.addEventListener("change", (selected) => {
-//     var x = selected.value;
-//     console.log(selected);
-//     return x
-//   });
-// }
-
-// function recordInput(selected) {
-//   var x = selected.value;
-//   return x
-// }
+if (myFormDataArray.length > 0) {
+  uname.value = myFormDataArray[0]
+  emailer.value = myFormDataArray[1]
+  message.value = myFormDataArray[2]
+}
 
 function EmailValidation(e) {
   const email = emailer.value;
