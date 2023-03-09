@@ -11,8 +11,38 @@ const viewModal2 = ReadElement('.view-modal2');
 const viewModal3 = ReadElement('.view-modal3');
 const viewModal4 = ReadElement('.view-modal4');
 const emailer = ReadElement('#useremail');
+const uname = ReadElement('#username');
+const message = ReadElement('#description');
 const validator = ReadElement('.validator');
 const submitbtn = ReadElement('#submit-form');
+
+let myMessage;
+let userName;
+let email;
+
+let userData = [];
+
+function UpdateInput(selected) {
+  function myFunction() {
+    email = emailer.value;
+    userName = uname.value;
+    myMessage = message.value;
+    userData = [userName, email, myMessage];
+    localStorage.setItem('userData', userData);
+  }
+  selected.addEventListener('change', myFunction);
+}
+
+myMessage = UpdateInput(message);
+userName = UpdateInput(uname);
+email = UpdateInput(emailer);
+
+const myFormData = localStorage.getItem('userData');
+const myFormDataArray = myFormData.split(',');
+
+if (myFormDataArray.length > 0) {
+  [uname.value, emailer.value, message.value] = myFormDataArray;
+}
 
 function EmailValidation(e) {
   const email = emailer.value;
@@ -31,8 +61,7 @@ function EmailValidation(e) {
     e.preventDefault();
   }
 }
-const e = this;
-submitbtn.addEventListener('click', () => EmailValidation(e));
+submitbtn.addEventListener('submit', (e) => EmailValidation(e));
 
 function RemoveMenu(selected, modalPart, remover) {
   return selected.addEventListener('click', () => modalPart.classList.remove(remover));
@@ -104,13 +133,13 @@ function renderModal(number) {
                   ${work.languages.map((lang) => `<div class="single-tech" id="techs-item">${lang}</div>`).join('')}
                 
                   </div>
-                  <hr class="work-modal-hr">
-                  <div class="work-modal-btn-grp">
-                  <a href=${work.liveLink} id="btn-link" ><button type="button" class="view-more work-modal-btn">See live <img class="btn-icon" src="images/icons/Icon.png" alt="icon img"></button></a>
-                  <a href=${work.sourceCode} id="btn-link" <button type="button" class="view-more work-modal-btn">See Source <img class="btn-icon" src="images/icons/Vector.png" alt="icon img"></button></a>
+                    <hr class="work-modal-hr">
+                    <div class="work-modal-btn-grp">
+                    <a href=${work.liveLink} id="btn-link" ><button type="button" class="view-more work-modal-btn">See live <img class="btn-icon" src="images/icons/Icon.png" alt="icon img"></button></a>
+                    <a href=${work.sourceCode} id="btn-link" <button type="button" class="view-more work-modal-btn">See Source <img class="btn-icon" src="images/icons/Vector.png" alt="icon img"></button></a>
                   </div>
-                  </div> 
-                  </div>
+              </div> 
+          </div>
     </div>`;
 
   WorkModal.innerHTML = modalInstance;
