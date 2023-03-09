@@ -20,14 +20,15 @@ let myMessage;
 let userName;
 let email;
 
-let userData = {};
+let userData = [];
 
 function UpdateInput(selected) {
   function myFunction() {
-    userData.email = emailer.value;
-    userData.userName = uname.value;
-    userData.myMessage = message.value;
-    localStorage.setItem('userData', JSON.stringify(userData));
+    email = emailer.value;
+    userName = uname.value;
+    myMessage = message.value;
+    userData = [userName, email, myMessage];
+    localStorage.setItem('userData', userData);
   }
   selected.addEventListener('change', myFunction);
 }
