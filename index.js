@@ -11,8 +11,44 @@ const viewModal2 = ReadElement('.view-modal2');
 const viewModal3 = ReadElement('.view-modal3');
 const viewModal4 = ReadElement('.view-modal4');
 const emailer = ReadElement('#useremail');
+const uname = ReadElement('#username');
+const message = ReadElement('#description');
 const validator = ReadElement('.validator');
 const submitbtn = ReadElement('#submit-form');
+
+var myMessage = UpdateInput(message)
+var userName = UpdateInput(uname)
+var email = UpdateInput(emailer)
+var userData = {}
+function UpdateInput(selected){
+   selected.addEventListener("change", myFunction);
+  function myFunction() {
+    email = emailer.value;
+    userName = uname.value;
+    myMessage = message.value;
+    userData = { userName, email, myMessage }
+    // console.log(userData)
+  console.log(userData)
+  // return userData;
+  }
+}
+ 
+
+// const userData = { userName, email, myMessage }
+// console.log(userData);
+
+// function UpdateInput(selected){
+//   selected.addEventListener("change", (selected) => {
+//     var x = selected.value;
+//     console.log(selected);
+//     return x
+//   });
+// }
+
+// function recordInput(selected) {
+//   var x = selected.value;
+//   return x
+// }
 
 function EmailValidation(e) {
   const email = emailer.value;
@@ -31,8 +67,7 @@ function EmailValidation(e) {
     e.preventDefault();
   }
 }
-const e = this;
-submitbtn.addEventListener('click', () => EmailValidation(e));
+submitbtn.addEventListener('submit', (e) => EmailValidation(e));
 
 function RemoveMenu(selected, modalPart, remover) {
   return selected.addEventListener('click', () => modalPart.classList.remove(remover));
