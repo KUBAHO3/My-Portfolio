@@ -16,29 +16,32 @@ const message = ReadElement('#description');
 const validator = ReadElement('.validator');
 const submitbtn = ReadElement('#submit-form');
 
-var myMessage = UpdateInput(message)
-var userName = UpdateInput(uname)
-var email = UpdateInput(emailer)
-var userData = []
-function UpdateInput(selected){
-   selected.addEventListener("change", myFunction);
+let myMessage;
+let userName;
+let email;
+
+let userData = [];
+
+function UpdateInput(selected) {
   function myFunction() {
     email = emailer.value;
     userName = uname.value;
     myMessage = message.value;
-    userData = [ userName, email, myMessage ]
-    localStorage.setItem("userData", userData)
-  
+    userData = [userName, email, myMessage];
+    localStorage.setItem('userData', userData);
   }
+  selected.addEventListener('change', myFunction);
 }
 
-const myFormData= localStorage.getItem("userData")
-const myFormDataArray = myFormData.split(",");
+myMessage = UpdateInput(message);
+userName = UpdateInput(uname);
+email = UpdateInput(emailer);
+
+const myFormData = localStorage.getItem('userData');
+const myFormDataArray = myFormData.split(',');
 
 if (myFormDataArray.length > 0) {
-  uname.value = myFormDataArray[0]
-  emailer.value = myFormDataArray[1]
-  message.value = myFormDataArray[2]
+  [uname.value, emailer.value, message.value] = myFormDataArray;
 }
 
 function EmailValidation(e) {
