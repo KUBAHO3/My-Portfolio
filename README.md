@@ -107,6 +107,7 @@ This project is about creating a personal portfolio to showcase my activities, b
 - **Mobile Nav**
 - **Detail modal**
 - **Email validation**
+- **store form data in local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,8 +200,8 @@ git@github.com:KUBAHO3/My-Portfolio.git
 <!-- FUTURE FEATURES -->
 
 ## :telescope: Future Features <a name="future-features"></a><br/>
-- [ ] **Adding Javascript**<br/>
-- [ ] **Making it dynamic**
+- [ ] **Adding BackEnd**<br/>
+- [ ] **Making it stylish**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
 
