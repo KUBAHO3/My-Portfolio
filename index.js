@@ -20,15 +20,15 @@ let myMessage;
 let userName;
 let email;
 
-let userData = [];
+let userData = {};
 
 function UpdateInput(selected) {
   function myFunction() {
-    email = emailer.value;
-    userName = uname.value;
-    myMessage = message.value;
-    userData = [userName, email, myMessage];
-    localStorage.setItem('userData', userData);
+    userData.email = emailer.value;
+    userData.userName = uname.value;
+    userData.myMessage = message.value;
+    // userData = [userName, email, myMessage];
+    localStorage.setItem('userData', JSON.stringify(userData));
   }
   selected.addEventListener('change', myFunction);
 }
@@ -38,11 +38,15 @@ userName = UpdateInput(uname);
 email = UpdateInput(emailer);
 
 const myFormData = localStorage.getItem('userData');
-const myFormDataArray = myFormData.split(',');
+console.log(myFormData)
+// const myFormDataArray = myFormData.split(',');
+const myFormDataArray = Object.values(JSON.parse(myFormData));
+console.log(myFormDataArray)
 
 if (myFormDataArray.length > 0) {
   [uname.value, emailer.value, message.value] = myFormDataArray;
 }
+
 
 function EmailValidation(e) {
   const email = emailer.value;
