@@ -24,10 +24,9 @@ let userData = {};
 
 function UpdateInput(selected) {
   function myFunction() {
-    userData.email = emailer.value;
     userData.userName = uname.value;
+    userData.email = emailer.value;
     userData.myMessage = message.value;
-    // userData = [userName, email, myMessage];
     localStorage.setItem('userData', JSON.stringify(userData));
   }
   selected.addEventListener('change', myFunction);
@@ -38,10 +37,7 @@ userName = UpdateInput(uname);
 email = UpdateInput(emailer);
 
 const myFormData = localStorage.getItem('userData');
-console.log(myFormData)
-// const myFormDataArray = myFormData.split(',');
 const myFormDataArray = Object.values(JSON.parse(myFormData));
-console.log(myFormDataArray)
 
 if (myFormDataArray.length > 0) {
   [uname.value, emailer.value, message.value] = myFormDataArray;
