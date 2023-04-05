@@ -75,7 +75,7 @@ const details = [
     name: 'Tasks Management system',
     technology: 'Front End Dev',
     year: '2023',
-    imageUrl: 'images/Snapshoot-Portfolio.png',
+    imageUrl: 'images/real_todo.png',
     description: "The ToDo List for task management with CRUD operations developed in JavaScript plain with addition of Html&Css technologies",
     languages: ['html', 'css', 'javascript', 'github', 'Bootstraps'],
     liveLink: 'https://kubaho3.github.io/To-Do-List/dist/',
