@@ -37,11 +37,13 @@ myMessage = UpdateInput(message);
 userName = UpdateInput(uname);
 email = UpdateInput(emailer);
 
-const myFormData = localStorage.getItem('userData');
-const myFormDataArray = myFormData.split(',');
-
-if (myFormDataArray.length > 0) {
-  [uname.value, emailer.value, message.value] = myFormDataArray;
+if (localStorage.getItem('userData') !== null) {
+  const myFormData = localStorage.getItem('userData');
+  const myFormDataArray = myFormData.split(',');
+  
+  if (myFormDataArray.length > 0) {
+    [uname.value, emailer.value, message.value] = myFormDataArray;
+  }
 }
 
 function EmailValidation(e) {
