@@ -71,15 +71,15 @@ function RemoveMenu(selected, modalPart, remover) {
 
 const details = [
   {
-    title: 'Tonic',
-    name: 'CANOPY',
-    technology: 'Back End Dev',
-    year: '2025',
+    title: 'Todo Lists',
+    name: 'Tasks Management system',
+    technology: 'Front End Dev',
+    year: '2023',
     imageUrl: 'images/Snapshoot-Portfolio.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    languages: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    liveLink: 'https://www.linkedin.com/in/kubaho-linne-heaven-78ab37208/',
-    sourceCode: 'https://github.com/KUBAHO3',
+    description: "The ToDo List for task management with CRUD operations developed in JavaScript plain with addition of Html&Css technologies",
+    languages: ['html', 'css', 'javascript', 'github', 'Bootstraps'],
+    liveLink: 'https://kubaho3.github.io/To-Do-List/dist/',
+    sourceCode: 'https://github.com/KUBAHO3/To-Do-List/',
   }, {
     title: 'Multi-Post Stories',
     name: 'CANOPY',
